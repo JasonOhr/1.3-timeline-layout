@@ -81,9 +81,11 @@ h1.dark {
     position: relative;
 }
 .right, .right div  {
+    transition: background-color 0.5s ease;
     background-color: #80C0E9;
 }
 .right-dark, .right-dark div {
+    transition: background-color 0.5s ease;
     background-color: #5096C6;
 }
 .right h1, .right-dark h1 {
@@ -110,4 +112,8 @@ h1.dark {
     position: absolute;
     left: -7px;
     top: 12px;
+    z-index: -5;
+}
+ .right:hover, .right:hover div, .right-dark:hover, .right-dark:hover div{
+    background-color: #16557f;
 }
