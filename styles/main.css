@@ -1,0 +1,76 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+article {
+    min-height: 300px;
+
+}
+section {
+    display: inline-block;
+    vertical-align: top;
+}
+.left, .right {
+    min-height: 300px;
+}
+.left {
+    margin-right: 50px;
+    border-right: 10px solid #B8DCF5;
+    width: 250px;
+    position: relative;
+}
+.left h1 {
+    font-family: sans-serif;
+    color: #80C0E9;
+    font-size: 48px;
+    font-weight: 300;
+    margin-right: 37px;
+    text-align: right;
+
+}
+.left h5 {
+    color: #C1D0DA;
+    font-weight: 100;
+    text-align: right;
+    margin-right: 35px;
+}
+
+.circle-logo {
+    background-color: #5FA6D5;
+    background-image: url("../assets/phone-icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+
+
+    width: 56px;
+    height: 56px;
+    border: 8px solid #B8DCF5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 216px;
+    top: -20px;
+}
+.right, .right-dark{
+    width: 785px;
+
+    color: white;
+    border-radius: 5px;
+    position: relative;
+}
+.right {
+    background-color: #80C0E9;
+}
+.right-dark {
+    background-color: #5096C6;
+}
