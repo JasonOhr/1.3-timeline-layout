@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial;
 }
 
 .container {
@@ -13,13 +13,14 @@
 }
 article {
     min-height: 300px;
+    margin-bottom: 15px;
 
 }
 section {
     display: inline-block;
     vertical-align: top;
 }
-.left, .right {
+.left, .right, .right-dark{
     min-height: 300px;
 }
 .left {
@@ -29,27 +30,27 @@ section {
     position: relative;
 }
 .left h1 {
-    font-family: sans-serif;
+    font-family: Lato, Calibri, Arial, sans-serif;
     color: #80C0E9;
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 400;
     margin-right: 37px;
     text-align: right;
 
 }
 .left h5 {
     color: #C1D0DA;
-    font-weight: 100;
+    font-family: Lato, Calibri, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
     text-align: right;
     margin-right: 35px;
 }
 
-.circle-logo {
+.circle-logo{
     background-color: #5FA6D5;
-    background-image: url("../assets/phone-icon.png");
-    background-repeat: no-repeat;
-    background-position: 10px 6px;
 
+    background-repeat: no-repeat;
 
     width: 56px;
     height: 56px;
@@ -61,16 +62,52 @@ section {
     left: 216px;
     top: -20px;
 }
+.phone {
+    background-image: url("../assets/phone-icon.png");
+    background-position: 10px 6px;
+}
+.screen {
+    background-image: url("../assets/screen-icon.png");
+    background-position: 7px 7px;
+}
+h1.dark {
+    color: #5096C6;
+}
 .right, .right-dark{
     width: 785px;
-
+    padding: 40px;
     color: white;
     border-radius: 5px;
     position: relative;
 }
-.right {
+.right, .right div  {
     background-color: #80C0E9;
 }
-.right-dark {
+.right-dark, .right-dark div {
     background-color: #5096C6;
+}
+.right h1, .right-dark h1 {
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    font-family: Lato, Calibri, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.right p, .right-dark p{
+    font-family: Lato, Calibri, Arial, sans-serif;
+    padding-top: 25px;
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 1.5em;
+}
+.right div, .right-dark div {
+
+    width: 15px;
+    height: 15px;
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    position: absolute;
+    left: -7px;
+    top: 12px;
 }
